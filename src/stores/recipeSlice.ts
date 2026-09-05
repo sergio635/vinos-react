@@ -1,12 +1,10 @@
 import type { StateCreator } from 'zustand'
 import { getWines } from '../services/WineService'
+import type { Wine } from '../utils/wines-schema'
 
-type Category = {
-
-}
 
 export type RecipesSliceType = {
-    categories: Category[]
+    categories: Wine[]
     fetchCategories: () => Promise<void>
 }
 export const createRecipeSlice : StateCreator<RecipesSliceType> = (set) => ({
