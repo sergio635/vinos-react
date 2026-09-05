@@ -6,7 +6,7 @@
    fill="none"
    version="1.1"
    id="svg15"
-   sodipodi:docname="logo_taberna_san_ignacio.svg"
+   sodipodi:docname="logo.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -21,15 +21,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.7703125"
-     inkscape:cx="143.30513"
-     inkscape:cy="22.560632"
+     inkscape:zoom="3.9178135"
+     inkscape:cx="151.87042"
+     inkscape:cy="39.690506"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g13" />
+     inkscape:current-layer="svg15" />
   <defs
      id="defs1">
     <style
@@ -42,7 +42,8 @@
   <!-- Copa de vino con líquido -->
   <g
      transform="matrix(1.0862776,0,0,1.0862776,-5.431388,-5.8659006)"
-     id="g6">
+     id="g6"
+     style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1">
     <!-- Tallo y base -->
     <line
        x1="22"
@@ -51,7 +52,8 @@
        y2="49.41283"
        class="stroke"
        stroke-width="2.3156"
-       id="line1" />
+       id="line1"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <ellipse
        cx="22"
        cy="50"
@@ -59,25 +61,29 @@
        ry="3"
        class="stroke"
        stroke-width="2"
-       id="ellipse1" />
+       id="ellipse1"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <!-- Cuerpo de la copa -->
     <path
        d="M 6,12 C 6,26 12,36 22,36 32,36 38,26 38,12"
        class="stroke"
        stroke-width="2"
-       id="path2" />
+       id="path2"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <path
        d="M 6,12 H 38"
        class="stroke"
        stroke-width="2"
-       id="path3" />
+       id="path3"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <!-- Líquido dentro de la copa -->
     <path
        d="m 7.0637411,20.020908 c 0,7.979092 6.4422759,15.958184 15.0319759,15.958184 8.5897,0 15.031975,-7.979092 15.031975,-15.958184"
        fill="color-mix(in srgb, currentColor 12%, transparent)"
        class="stroke"
        stroke-width="1.24181"
-       id="path4" />
+       id="path4"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <ellipse
        cx="22"
        cy="20"
@@ -86,7 +92,8 @@
        fill="color-mix(in srgb, currentColor 8%, transparent)"
        class="stroke"
        stroke-width="1.03643"
-       id="ellipse4" />
+       id="ellipse4"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <!-- Reflejo en el líquido -->
     <!-- Burbujas / detalle -->
     <circle
@@ -95,7 +102,8 @@
        r="1"
        class="fill-text"
        opacity="0.3"
-       id="circle5" />
+       id="circle5"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <circle
        cx="22.571667"
        cy="28.041954"
@@ -103,7 +111,7 @@
        class="fill-text"
        opacity="0.3"
        id="circle5-2"
-       style="fill:currentColor" />
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <circle
        cx="13.852279"
        cy="25.93531"
@@ -111,7 +119,7 @@
        class="fill-text"
        opacity="0.3"
        id="circle5-5"
-       style="fill:currentColor" />
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <circle
        cx="29.631964"
        cy="25.445799"
@@ -119,26 +127,29 @@
        class="fill-text"
        opacity="0.3"
        id="circle5-1"
-       style="fill:currentColor" />
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <circle
        cx="26"
        cy="32"
        r="0.80000001"
        class="fill-text"
        opacity="0.3"
-       id="circle6" />
+       id="circle6"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
   </g>
   <!-- Racimo de uvas al lado derecho de la copa -->
   <g
      transform="translate(36.609701,14.682684)"
-     id="g13">
+     id="g13"
+     style="fill:none;stroke:#f5f0e8;stroke-opacity:1">
     <circle
        cx="5.755125"
        cy="-0.99558812"
        class="stroke"
        stroke-width="1.62941"
        id="circle7"
-       r="4.3451104" />
+       r="4.3451104"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <path
        class="stroke"
        stroke-width="1.62941"
@@ -153,7 +164,8 @@
        sodipodi:end="4.7883181"
        sodipodi:open="true"
        sodipodi:arc-type="arc"
-       d="m -10.334943,-2.1655638 a 4.3451104,4.3451104 0 0 1 -1.651874,4.9022976 4.3451104,4.3451104 0 0 1 -5.170882,-0.1522994 4.3451104,4.3451104 0 0 1 -1.360483,-4.9910215 4.3451104,4.3451104 0 0 1 4.378315,-2.755279" />
+       d="m -10.334943,-2.1655638 a 4.3451104,4.3451104 0 0 1 -1.651874,4.9022976 4.3451104,4.3451104 0 0 1 -5.170882,-0.1522994 4.3451104,4.3451104 0 0 1 -1.360483,-4.9910215 4.3451104,4.3451104 0 0 1 4.378315,-2.755279"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <path
        class="stroke"
        stroke-width="1.62941"
@@ -167,7 +179,8 @@
        sodipodi:end="6.0632742"
        sodipodi:arc-type="arc"
        d="M 12.720509,11.160774 A 4.3451104,4.3451104 0 0 1 7.5135877,11.185942 4.3451104,4.3451104 0 0 1 6.0212284,6.1974021 4.3451104,4.3451104 0 0 1 10.386539,3.3589644 4.3451104,4.3451104 0 0 1 14.3407,6.7467772"
-       sodipodi:open="true" />
+       sodipodi:open="true"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <path
        class="stroke"
        stroke-width="1.62941"
@@ -182,34 +195,39 @@
        sodipodi:open="true"
        sodipodi:arc-type="arc"
        d="M 9.1895476,9.3116286 A 3.8019714,3.8019714 0 0 1 6.2191288,12.715829 3.8019714,3.8019714 0 0 1 2.0921739,10.877294 3.8019714,3.8019714 0 0 1 2.6363798,6.3922283 3.8019714,3.8019714 0 0 1 7.0832703,5.5940203"
-       transform="rotate(11.002685)" />
+       transform="rotate(11.002685)"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <circle
        cx="16.617899"
        cy="9.8671865"
        class="stroke"
        stroke-width="1.62941"
        id="circle11"
-       r="3.8019714" />
+       r="3.8019714"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <circle
        cx="10.100234"
        cy="16.384853"
        class="stroke"
        stroke-width="1.62941"
        id="circle12"
-       r="3.8019714" />
+       r="3.8019714"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <!-- Tallo de uva -->
     <path
        d="m 9.9616012,-2.5680355 c 0,-2.8967403 1.5870028,-7.8419575 4.4837438,-9.2903285"
        class="stroke"
        stroke-width="1.30353"
        id="path12"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
     <!-- Hoja -->
     <path
        d="m 14.445345,-11.858364 q 4.345109,-4.34511 8.690221,0 -4.345112,4.3451106 -8.690221,0 z"
        class="stroke"
        stroke-width="1.30353"
-       id="path13" />
+       id="path13"
+       style="fill:none;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
   </g>
   <!-- Texto principal -->
   <text
@@ -222,7 +240,7 @@
      opacity="0.6"
      letter-spacing="3"
      id="text13"
-     style="stroke-width:1.08628">TABERNA</text>
+     style="stroke-width:1.08628;fill:#f5f0e8;fill-opacity:1">TABERNA</text>
   <text
      x="77.12571"
      y="41.930313"
@@ -232,7 +250,7 @@
      class="fill-text"
      letter-spacing="0.8"
      id="text14"
-     style="stroke-width:1.08628">SAN IGNACIO</text>
+     style="stroke-width:1.08628;fill:#f5f0e8;fill-opacity:1">SAN IGNACIO</text>
   <!-- Líneas ornamentales debajo del texto -->
   <line
      x1="68.462425"
@@ -242,7 +260,8 @@
      class="stroke"
      stroke-width="1.08628"
      opacity="0.4"
-     id="line14" />
+     id="line14"
+     style="fill:#f5f0e8;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
   <line
      x1="183.55255"
      y1="47.36507"
@@ -251,14 +270,16 @@
      class="stroke"
      stroke-width="1.0295"
      opacity="0.4"
-     id="line15" />
+     id="line15"
+     style="fill:#f5f0e8;fill-opacity:1;stroke:#f5f0e8;stroke-opacity:1" />
   <!-- Pequeño rombo decorativo entre líneas -->
   <polygon
      points="190,56 187.5,58.5 185,56 187.5,53.5 "
      class="fill-text"
      opacity="0.5"
      id="polygon15"
-     transform="matrix(1.0862776,0,0,1.0862776,-25.169434,-13.270419)" />
+     transform="matrix(1.0862776,0,0,1.0862776,-25.169434,-13.270419)"
+     style="fill:#f5f0e8;fill-opacity:1" />
   <!-- Ornamento inferior derecho -->
   <circle
      cx="298.7533"
@@ -267,13 +288,13 @@
      opacity="0.5"
      id="circle15"
      r="1.6294163"
-     style="stroke-width:1.08628" />
+     style="stroke-width:1.08628;fill:#f5f0e8;fill-opacity:1" />
   <circle
      cx="66.952454"
      cy="47.531334"
      class="fill-text"
      opacity="0.5"
      id="circle15-4"
-     style="fill:currentColor;stroke-width:1.08628"
+     style="fill:#f5f0e8;stroke-width:1.08628;fill-opacity:1"
      r="1.6294163" />
 </svg>

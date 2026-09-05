@@ -17,7 +17,7 @@ function Header() {
     <header className="bg-cover bg-center relative" style={{ backgroundImage: 'url(/images/header.jpg)'}}>
         <div className="container mx-auto flex justify-between items-center p-4">
             <div className="flex justify-between items-center">
-                <img src={Logo} alt="Logo" className="w-70 h-33 object-contain fill-cyan-50" />
+                <img src={Logo} alt="Logo" className="w-70 h-33 object-contain " />
              </div>
              <nav className="flex gap-4">
                 <Link to="/" className="text-white hover:text-[#C4A35A] font-bold">Inicio</Link>
