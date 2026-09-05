@@ -9,9 +9,10 @@ export type RecipesSliceType = {
     categories: Category[]
     fetchCategories: () => Promise<void>
 }
-export const createRecipeSlice : StateCreator<RecipesSliceType> = () => ({
+export const createRecipeSlice : StateCreator<RecipesSliceType> = (set) => ({
     categories: [],
     fetchCategories: async () => {
-        getWines()
+        const result = await getWines()
+        set({ categories: result.data })
     }
 })
