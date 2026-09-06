@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useMemo, useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 import Logo from "../assets/logo.svg";
 import { useAppStore } from "../stores/useAppStore";
 
@@ -7,9 +7,7 @@ const colorLabels: Record<string, string> = {
   white: 'Blanco',
   red: 'Tinto',
   rose: 'Rosado',
-}
-
-
+};
 const colorOptions = Object.keys(colorLabels);
 
 function Header() {
@@ -22,12 +20,11 @@ function Header() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     fetchCategories(selectedColor || undefined);
-  }
-
+  };
 
   return (
     <header className="bg-cover bg-center relative" style={{ backgroundImage: 'url(/images/header.jpg)' }}>
-      <div className="flex justify-between items-center p-4">
+      <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex justify-between items-center">
           <img src={Logo} alt="Logo" className="w-70 h-33 object-contain " />
         </div>
@@ -38,14 +35,12 @@ function Header() {
       </div>
       <div>
         {isHome && (
-          <form 
-            onSubmit={handleSubmit} 
-            className="md:w-1/2 2xl:w-1/3 my-32 bg-[#F5F0E8] p-10 shadow space-y-6">
+          <form
+            onSubmit={handleSubmit}
+            className=" md:w-1/2 2xl:w-1/3 my-32 bg-[#F5F0E8] p-10 shadow space-y-6"
+          >
             <div className='space-y-4'>
-              <label
-                htmlFor="display_name"
-                className="block font-extrabold text-[#3D2B1F] uppercase"
-              >
+              <label htmlFor="display_name" className="block font-extrabold text-[#3D2B1F] uppercase">
                 Nombre o Ingredientes
               </label>
               <input
@@ -57,10 +52,7 @@ function Header() {
               />
             </div>
             <div className='space-y-4'>
-              <label
-                htmlFor="color"
-                className="block font-extrabold text-[#3D2B1F] uppercase"
-              >
+              <label htmlFor="color" className="block font-extrabold text-[#3D2B1F] uppercase">
                 Tipo de Vino
               </label>
               <select
