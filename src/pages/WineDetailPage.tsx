@@ -4,9 +4,9 @@ import { getWineDetail } from '../services/WineService';
 import type { WineDetail } from '../utils/wines-schema';
 
 const colorImages: Record<string, string> = {
-  white: '/images/wine-white.jpg',
-  red: '/images/wine-red.jpg',
-  rose: '/images/wine-rose.jpg',
+  white: '/images/wine-white.svg',
+  red: '/images/wine-red.svg',
+  rose: '/images/wine-rose.svg',
 };
 
 function WineDetailPage() {
