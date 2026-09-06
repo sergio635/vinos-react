@@ -59,6 +59,39 @@ export const WinesSearchAPIResponseSchema = z.object({
 
 export type WineSearchResult = z.infer<typeof WineSearchResultSchema>;
 
+const FlavorProfileSchema = z.object({
+  sweetness: z.number(),
+  acidity: z.number(),
+  tannins: z.number(),
+  alcohol: z.number(),
+  body: z.number(),
+  finish: z.number(),
+});
+
+const GrapeSchema = z.object({
+  id: z.number(),
+  name: z.string(),
+});
+
+export const WineDetailSchema = z.object({
+  id: z.number(),
+  lwin: z.string().nullable(),
+  display_name: z.string(),
+  color: z.string(),
+  type: z.string(),
+  sub_type: z.string(),
+  producer: ProducerSchema,
+  region: RegionSchema,
+  residual_sugar: z.string().nullable(),
+  grapes: z.array(GrapeSchema).optional(),
+  description: z.object({ text: z.string(), language: z.string() }).nullable().optional(),
+  tasting_notes: z.object({ text: z.string(), language: z.string() }).nullable().optional(),
+  pairing: z.object({ text: z.string(), language: z.string() }).nullable().optional(),
+  flavor_profile: FlavorProfileSchema.optional(),
+});
+
+export type WineDetail = z.infer<typeof WineDetailSchema>;
+
 export const WinesAPIResponseSchema = z.object({
   data: z.array(WineSchema),
   meta: MetaSchema,

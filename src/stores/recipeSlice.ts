@@ -13,11 +13,11 @@ export const createRecipeSlice : StateCreator<RecipesSliceType> = (set) => ({
     categories: [],
     searchResults: [],
     fetchCategories: async (color ?: string) => {
-        const result = await getWines(color)
+        const result = await getWines(color,100)
         set({ categories: result.data })
     },
     fetchSearch: async (query: string) => {
-        const result = await searchWines(query);
+        const result = await searchWines(query,100);
         set({ searchResults: result.data })
     }
 })

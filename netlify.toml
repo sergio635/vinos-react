@@ -5,3 +5,8 @@
 
 [functions]
   node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/.netlify/functions/wine-detail/*"
+  to = "/.netlify/functions/wine-detail/:splat"
+  status = 200
