@@ -1,6 +1,6 @@
 import type { Handler } from '@netlify/functions';
 
-const API_KEY = process.env.GRAPEMINDS_API_KEY; // sin VITE_, esto vive solo en el servidor
+const API_KEY = process.env.GRAPEMINDS_API_KEY;
 
 export const handler: Handler = async (event) => {
   try {
