@@ -5,12 +5,12 @@ import type { Wine } from '../utils/wines-schema'
 
 export type RecipesSliceType = {
     categories: Wine[]
-    fetchCategories: () => Promise<void>
+    fetchCategories: (color ?: string) => Promise<void>
 }
 export const createRecipeSlice : StateCreator<RecipesSliceType> = (set) => ({
     categories: [],
-    fetchCategories: async () => {
-        const result = await getWines()
+    fetchCategories: async (color ?: string) => {
+        const result = await getWines(color)
         set({ categories: result.data })
     }
 })
