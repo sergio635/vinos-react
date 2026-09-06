@@ -2,6 +2,8 @@ import {useAppStore} from '../stores/useAppStore'
 function IndexPage() {
   const categories = useAppStore((state) => state.categories)
   const searchResults = useAppStore((state) => state.searchResults)
+   // Si hubo búsqueda por texto, mostramos esos resultados; si no, los del filtro de color
+  const wines = searchResults.length > 0 ? searchResults : categories;
 
 return (
     <div className="container mx-auto p-8">
