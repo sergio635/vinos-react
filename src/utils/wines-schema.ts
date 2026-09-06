@@ -36,6 +36,29 @@ const MetaSchema = z.object({
   to: z.number().nullable(),
 });
 
+const WineSearchResultSchema = z.object({
+  id: z.number(),
+  lwin: z.string().nullable(),
+  display_name: z.string(),
+  color: z.string(),
+  residual_sugar: z.string().nullable(),
+  producer_name: z.string(),
+  producer_title: z.string().nullable(),
+  producer_display_name: z.string(),
+});
+
+const SearchMetaSchema = z.object({
+  query: z.string(),
+  count: z.number(),
+});
+
+export const WinesSearchAPIResponseSchema = z.object({
+  data: z.array(WineSearchResultSchema),
+  meta: SearchMetaSchema,
+});
+
+export type WineSearchResult = z.infer<typeof WineSearchResultSchema>;
+
 export const WinesAPIResponseSchema = z.object({
   data: z.array(WineSchema),
   meta: MetaSchema,

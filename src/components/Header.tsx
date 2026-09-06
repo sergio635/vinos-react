@@ -15,11 +15,18 @@ function Header() {
   const isHome = useMemo(() => location.pathname === '/', [location.pathname]);
 
   const fetchCategories = useAppStore((state) => state.fetchCategories);
+  const fetchSearch = useAppStore((state) => state.fetchSearch);
   const [selectedColor, setSelectedColor] = useState('');
+  const [searchText, setSearchText] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    fetchCategories(selectedColor || undefined);
+    if(searchText.trim().length >= 3){
+      fetchSearch(searchText);
+    } else {
+
+      fetchCategories(selectedColor || undefined);
+    }
   };
 
   return (
@@ -47,6 +54,8 @@ function Header() {
                 type="text"
                 name="display_name"
                 id="display_name"
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
                 className="p-3 w-full rounded-lg bg-[#F5F0E8] text-[#A0522D] placeholder:text-[#A0522D] border border-[#A0522D] focus:ring-[#C4A35A] focus:outline-none"
                 placeholder="Buscar por nombre o ingredientes... Ej: Vino tinto, Vino blanco, Manzana, etc..."
               />
