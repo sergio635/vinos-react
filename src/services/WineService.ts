@@ -12,7 +12,7 @@ export async function getWines(color?: string, per_page: number = 15) {
 export async function getWineDetail(id: number) {
   const url = `/.netlify/functions/wine-detail/${id}`;
   const response = await axios.get(url);
-  return WineDetailSchema.parse(response.data);
+  return WineDetailSchema.parse(response.data.data);
 }
 
 export async function searchWines(query: string, limit: number = 20) {

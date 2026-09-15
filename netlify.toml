@@ -10,3 +10,9 @@
   from = "/.netlify/functions/wine-detail/*"
   to = "/.netlify/functions/wine-detail/:splat"
   status = 200
+
+  [dev]
+  command = "npm run dev"
+  targetPort = 5173
+  framework = "#custom"
+  autoLaunch = false

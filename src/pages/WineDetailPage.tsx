@@ -14,15 +14,23 @@ function WineDetailPage() {
   const [wine, setWine] = useState<WineDetail | null>(null);
   const [loading, setLoading] = useState(true);
 
+  const [error, setError] = useState<string | null>(null);
+
   useEffect(() => {
     if (!id) return;
     setLoading(true);
+    setError(null);
     getWineDetail(Number(id))
       .then(setWine)
+      .catch((err) => {
+        console.error('Error al obtener el detalle del vino:', err);
+        setError(err?.message ?? 'Error al obtener el detalle del vino.');
+      })
       .finally(() => setLoading(false));
   }, [id]);
 
   if (loading) return <p className="p-8">Cargando...</p>;
+  if (error) return <p className="p-8 text-red-600">Error: {error}</p>;
   if (!wine) return <p className="p-8">No se encontró el vino.</p>;
 
   return (
